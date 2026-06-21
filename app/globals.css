@@ -3,25 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg-base: #0d0d14;
+  --color-bg-card: #13131f;
+  --color-bg-elevated: #1a1a2e;
+  --color-neon-primary: #7c3aed;
+  --color-neon-secondary: #06b6d4;
+  --color-neon-green: #10b981;
+  --color-neon-yellow: #facc15;
+  --color-neon-red: #ef4444;
+  --color-text-primary: #f1f1f8;
+  --color-text-secondary: #9898b0;
+  --color-text-muted: #55556a;
+  --color-border: #2a2a3d;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-bg-base text-text-primary font-body antialiased;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .neon-grid-bg {
+    background-image:
+      linear-gradient(rgba(124, 58, 237, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .checkmark-animate {
+    animation: checkmark-pop 0.6s ease-out forwards;
+  }
+
+  @keyframes checkmark-pop {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }
