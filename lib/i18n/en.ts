@@ -14,6 +14,8 @@ const en = {
   "footer.tagline": "Level up your game. Rent. Play. Repeat.",
   "footer.quickLinks": "Quick Links",
   "footer.contact": "Contact",
+  "footer.address": "Bondongan, South Bogor, West Java",
+  "footer.instagram": "@arenania",
   "footer.hours": "Open 7 days a week · 10:00 – 23:00",
   "footer.rights": "All rights reserved.",
 

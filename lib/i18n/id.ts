@@ -14,6 +14,8 @@ const id: Record<TranslationKey, string> = {
   "footer.tagline": "Naik level permainanmu. Sewa. Main. Ulangi.",
   "footer.quickLinks": "Tautan Cepat",
   "footer.contact": "Kontak",
+  "footer.address": "Bondongan, Bogor Selatan, Jawa Barat",
+  "footer.instagram": "@arenania",
   "footer.hours": "Buka 7 hari seminggu · 10:00 – 22:00",
   "footer.rights": "Hak cipta dilindungi.",
 
